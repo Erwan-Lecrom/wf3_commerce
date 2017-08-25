@@ -1,18 +1,13 @@
-<?php $this->layout('layout', ['title' => 'Ajouter un produit']) ?>
-
-<?php $this->start('main_content') ?>
-	<h2>Ajouter un produits</h2>
-
-	<form method="post">
-	<!-- Nom du produit -->
+<form method="post">
+		<!-- Nom du produit -->
 		<div>
 			<label for="name">Nom du produit</label>
-			<input type="text" name="name" id="name" value="<?= $name ?>">
+			<input type="text" name="name" id="name" value=<?=" $name "?>>
 		</div>
 		<!-- URL image -->
 		<div>
 			<label for="image">Image</label>
-			<input type="text" name="image" id="image" value="<?= $image ?>">
+			<input type="text" name="image" id="image" value=<?=" $image "?>>
 		</div>
 		<!-- Description du produit -->
 		<div>
@@ -26,4 +21,3 @@
 		</div>
 		<button type="submit" name="button">Envoyer</button>
 	</form>
-<?php $this->stop('main_content') ?>

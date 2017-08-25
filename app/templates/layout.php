@@ -9,8 +9,12 @@
 <body>
 	<nav>
 		<ul>
+			<li><a href="<?= $this->url('home') ?>">Accueil</a></li>
 			<li><a href="<?= $this->url('products') ?>">Liste des produits</a></li>
 			<li><a href="<?= $this->url('product_create') ?>">Ajouter un produit</a></li>
+
+			<li><a href="<?= $this->url('security_signup') ?>">Inscription</a></li>
+			<li><a href="<?= $this->url('security_signin') ?>">Connexion</a></li>
 		</ul>
 	</nav>
 	<div class="container">
